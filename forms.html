@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <form method="post">
+        <label for="">Enter your username</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="email">Enter your email</label>
+        <input type="email" name="my_mail" id="email" required>
+        <br>
+        <label for="password">Enter your password</label>
+        <!-- The name attribute is used for server side processing
+        so that the server can use the name field to get the value
+        from that particular input field -->
+        <input type="password" name="password" id="password" required>
+    </form>
+    <br>
+    <h1>Working with radio buttons</h1>
+    <p>Select your sex:</p>
+    <form action="" method="post">
+        <input type="radio" name="sex" id="1" value="Male"> Male <br>
+        <input type="radio" name="sex" id="2" value="Female"> Female <br>
+        <input type="radio" name="sex" id="3" value="Anonimus"> Dont Mention
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p><b> Note:</b> When a user clicks on a radio button, it
+        becomes checked, and all other radio buttons with same name
+        becomes unchecked
+    </p>
+    <h1>Working with dropdown menu</h1>
+    <form method="post">
+        <label for="question">Security Questions</label>
+        <select name="question" id="question">
+            <option value="q1">"Name of your school?"</option>
+            <option value="q1">"Name of your best friend?"</option>
+            <option value="q1">"What is your anniversary date?"</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="answer">Type your answer:</label>
+        <input type="text" id="answer">
+        <button type="reset">submitt</button>
+    </form>
+    <br><br>
+    <label for="bio"><b> Your bio:</b></label><br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+</body>
+
+</html>
